@@ -1,27 +1,15 @@
-# UniversalTest
+# Angular Universal / AWS Lambda Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+The default [Angular CLI](https://github.com/angular/angular-cli) project, modified to support [Angular Universal](https://github.com/angular/universal) prerendering via AWS Lambda (using the [Serverless](https://github.com/serverless) platform).
 
-## Development server
+## Quick start
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Clone the repo and run `yarn` to install dependencies.
+- Build the angular projects for server and browser using `npm run build:angular`
+- Build the lambda code with `npm run build:server`
+- After building, simulate the lambda endpoint locally by running `npm run start`
+- To deploy to AWS, set up your credentials with serverless, then use `npm run deploy`.
 
-## Code scaffolding
+### Acknowledgements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Lukas Marx's [blog post](https://malcoded.com/posts/angular-fundamentals-universal-server-side-rendering) does a great job explaining what canges are required to set up an Angular Universal project.

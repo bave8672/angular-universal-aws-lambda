@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "es5"
+    },
+    "files": ["./server.ts"],
+    "lib": ["esnext.asynciterable"],
+    "typeRoots": ["node_modules/@types"]
+}

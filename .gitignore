@@ -2,9 +2,12 @@
 
 # compiled output
 /dist
-/dist-server
+/dist-angular-browser
+/dist-angular-server
 /tmp
 /out-tsc
+.serverless
+/server/server.js
 
 # dependencies
 /node_modules

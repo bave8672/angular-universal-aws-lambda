@@ -1,0 +1,29 @@
+service: lambda-anguar-universal-test
+
+frameworkVersion: ">=1.2.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  index:
+    handler: server/server.handler
+    events:
+      - http:
+          method: get
+          path: /
+
+package:
+  exclude:
+    - '**'
+  include:
+    - server/server.js
+    - src/*.html
+    - src/*.ico
+    - src/*.css
+    - dist-angular-server/**
+    - dist-angular-browser/**
+
+plugins:
+  - serverless-offline
