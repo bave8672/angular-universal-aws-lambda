@@ -2,6 +2,8 @@
 
 The default [Angular CLI](https://github.com/angular/angular-cli) project, modified to support [Angular Universal](https://github.com/angular/universal) prerendering via AWS Lambda (using the [Serverless](https://github.com/serverless) platform).
 
+[Demo](https://s6pjooqlgl.execute-api.us-east-1.amazonaws.com/dev/)
+
 ## Quick start
 
 - Clone the repo and run `yarn` to install dependencies.
@@ -12,4 +14,4 @@ The default [Angular CLI](https://github.com/angular/angular-cli) project, modif
 
 ### Acknowledgements
 
-Lukas Marx's [blog post](https://malcoded.com/posts/angular-fundamentals-universal-server-side-rendering) does a great job explaining what canges are required to set up an Angular Universal project.
+Lukas Marx's [blog post](https://malcoded.com/posts/angular-fundamentals-universal-server-side-rendering) does a great job explaining what's required to set up an Angular Universal project.
