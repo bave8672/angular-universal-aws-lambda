@@ -1,5 +1,7 @@
 # Angular Universal / AWS Lambda Template
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bave8672/angular-universal-aws-lambda.svg)](https://greenkeeper.io/)
+
 The default [Angular CLI](https://github.com/angular/angular-cli) project, modified to support [Angular Universal](https://github.com/angular/universal) prerendering via AWS Lambda (using the [Serverless](https://github.com/serverless) platform).
 
 [Demo](https://s6pjooqlgl.execute-api.us-east-1.amazonaws.com/dev/)
